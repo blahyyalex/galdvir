@@ -1,5 +1,8 @@
 ﻿       body{
-          font-family: 'Playfair Display', serif;
+          @font-face {
+        font-family: Micra; /* Гарнитура шрифта */
+        src: url(../fonts/Micra.ttf); /* Путь к файлу со шрифтом */
+       }
           font-size:14px;
           margin:0;
           padding:0;        
@@ -87,7 +90,7 @@
             text-decoration:none;      
         }
         .main {
-           margin-top:-20px !important;
+           margin-top:-22px !important;
            background:#f7f6f6;
            padding-bottom:40px;  
         }
@@ -180,8 +183,11 @@
          .main .wrapper .content .content_left .dali{         
              width:71px;
              height:20px;
-             background:url(../images/dali.png) no-repeat;
+             background:#F6F6F6 url(../images/dali1.png) center center no-repeat;
              float:right;
+             border:1px solid #CDCDCD;
+             border-radius:5px;
+             cursor:pointer;
          }
          .main .wrapper .content .content_left .services{
              float:left;
@@ -267,10 +273,8 @@
             color:red;
         }
 
-        .main .wrapper .aside {
-         
-          float:left;
-          
+        .main .wrapper .aside {        
+          float:left;        
           margin-top:20px;
           margin-left:20px;
         }
@@ -287,19 +291,24 @@
            margin-right:20px;
        }
         .main .wrapper .aside .news .dali{         
-             width:71px;
+              width:71px;
              height:20px;
-             background:url(../images/dali.png) no-repeat;
+             background:#F6F6F6 url(../images/dali1.png) center center no-repeat;
              float:right;
+             border:1px solid #CDCDCD;
+             border-radius:5px;
              margin-top:10px;
+             cursor:pointer;
          }
+        
         .footer {
          height:172px;
          background:url(../images/footer_bg.png) repeat-x;
         }
         .footer .wrapper .content_left .services{
              float:left; 
-             margin-right:20px;                  
+             margin-right:20px; 
+             font:Arial;                 
          }
 
          .footer .wrapper .content_left .service_1 {
@@ -320,7 +329,7 @@
             color:#fff;
             font-size:12px;  
             text-decoration:none;   
-            margin-top:5px;
+            margin-top:5px;         
             
         }
        .footer .wrapper .content_left .services .service_link:hover{
@@ -328,10 +337,12 @@
          }
        .footer .wrapper .content_left .services  .form_contact{
            width:410px;
+           
        }
        .footer .wrapper .content_left .services  .form_contact .first_input{
            float:left;
             width:150px;
+          
         }
         .footer .wrapper .content_left .services  .form_contact .second_input{
          float:left;
@@ -346,7 +357,7 @@
             border-radius:5px;         
             font-size:10px;
             background:#DEDEDE;
-            
+            border:none;
         }
         .footer .wrapper .content_left .services .form_contact .first_input .top{
             margin-top:15px;
@@ -359,6 +370,7 @@
             background:#DEDEDE;
             border-radius:5px;       
             margin-left:20px;
+            border:none;
         }
         .footer .wrapper .content_left .services  .form_contact .submit_message{
              background:#DEDEDE;
@@ -369,7 +381,7 @@
              height:20px;
              border-radius:5px;
              float:right;   
-             margin-top:2px;  
+             margin-top:5px;  
          }
          .footer .wrapper .content_left .services  .form_contact .second{
              margin-right:10px;
